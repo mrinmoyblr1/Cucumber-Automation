@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="0.093" tests="5" skipped="0" failures="0" errors="0" timestamp="2025-06-16T21:40:59.319480Z">
+<testsuite name="Cucumber" time="0.095" tests="5" skipped="0" failures="0" errors="0" timestamp="2025-06-16T23:15:02.391851Z">
 <testcase classname="Application Login" name="Admin Page default Login" time="0.005">
 <system-out><![CDATA[
 Given setup the entries in database.........................................passed
@@ -11,7 +11,7 @@ Then Home Page is displayed.................................................pass
 And Cards are displayed.....................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Application Login" name="User Page default login" time="0.001">
+<testcase classname="Application Login" name="User Page default login" time="0.002">
 <system-out><![CDATA[
 Given setup the entries in database.........................................passed
 When launch the browser from config variables...............................passed
