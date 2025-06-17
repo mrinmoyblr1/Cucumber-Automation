@@ -7,5 +7,4 @@ public class TestContextSetup {
     public WebDriver driver;
     public String landingPageProductName;
 
-
 }

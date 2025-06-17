@@ -9,7 +9,6 @@ public class LandingPageStepDefinition {
     //public WebDriver driver;
     TestContextSetup testContextSetup;
 
-
     public LandingPageStepDefinition(TestContextSetup testContextSetup) {
         this.testContextSetup = testContextSetup;
 
