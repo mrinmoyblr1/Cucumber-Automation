@@ -9,5 +9,8 @@
         <module name="Automation" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="CucumberFramework" target="19" />
+    </bytecodeTargetLevel>
   </component>
 </project>
