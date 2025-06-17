@@ -37,6 +37,7 @@ public class GreenKartStepDefination {
         Thread.sleep(5000);
         landingPageproductName = driver.findElement(By.cssSelector("h4[class='product-name']")).getText().split("-")[0].trim();
         System.out.println("The Product Name is extracted from Home Page: " + landingPageproductName);
+        System.out.println("=====");
     }
 
     @Then("User searched for {string} shortname in the offer page")
