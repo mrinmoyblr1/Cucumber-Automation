@@ -1,4 +1,15 @@
 -------------------------------------------------------------------------------
 Test set: cucumberOptions.TestNGTestRunner
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.396 s -- in cucumberOptions.TestNGTestRunner
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 22.74 s <<< FAILURE! -- in cucumberOptions.TestNGTestRunner
+cucumberOptions.TestNGTestRunner.runScenario["Search Experience for the Product search in both home abd Offers Page", "Search and Place the Order for Products"](1) -- Time elapsed: 22.37 s <<< FAILURE!
+java.lang.AssertionError: expected [Tomato] but found [Test]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at stepDefinations.GreenKartStepDefination.validate_product_name_in_offers_page_matches_with_landing_page(GreenKartStepDefination.java:67)
+	at ✽.validate product name in offers page matches with Landing Page(file:///Users/mrinmoy/Documents/Development/Cucumber-Automation-002/Cucumber-Automation/src/test/java/features/searchProduct.feature:8)
+
