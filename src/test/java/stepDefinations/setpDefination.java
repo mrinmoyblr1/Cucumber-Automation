@@ -57,7 +57,6 @@ public class setpDefination {
 
     @Given("setup the entries in database")
     public void setup_the_entries_in_database() {
-        System.out.println("*****************************************");
         System.out.println("This is under :: setup the entries in database :: ");
     }
 
@@ -69,7 +68,6 @@ public class setpDefination {
     @When("hit the home page url of banking site")
     public void hit_the_home_page_url_of_banking_site() {
         System.out.println("This is under :: hit the home page url of banking site :: ");
-        System.out.println("*****************************************");
     }
 
 

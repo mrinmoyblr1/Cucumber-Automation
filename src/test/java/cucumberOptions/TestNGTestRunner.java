@@ -7,11 +7,10 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
         features = "src/test/java/features"
         , glue = "stepDefinations"
+        , tags = "@RegressionTest1"
         //, tags = "@SmokeTest or @RegressionTest"
         //, tags = "@SmokeTest and @RegressionTest"
-       // , tags = "not @RegressionTest"
-
-
+        // , tags = "not @RegressionTest"
         , plugin = {"pretty", "html:target/cucumber.html", "json:target/cucumber.json", "junit:target/cukes.xml"}
 )
 
