@@ -1,4 +1,9 @@
 -------------------------------------------------------------------------------
 Test set: cucumberOptions.TestNGTestRunner
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 27.549 sec
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 12.899 sec <<< FAILURE!
+runScenario(cucumberOptions.TestNGTestRunner)  Time elapsed: 12.391 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null
+	at stepDefinitions.OfferPageStepDefinition.user_searched_for_same_shortname_in_the_offer_page_to_check_if_product_is_exist(OfferPageStepDefinition.java:25)
+	at ✽.User searched for "Tom" shortname in the offer page(file:///Users/mrinmoy/Documents/Development/CucumberFramework/src/test/java/features/searchProduct.feature:7)
+

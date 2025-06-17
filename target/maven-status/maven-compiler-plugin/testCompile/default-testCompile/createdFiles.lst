@@ -1,1 +1,4 @@
+stepDefinitions/LandingPageStepDefinition.class
+utils/TestContextSetup.class
 cucumberOptions/TestNGTestRunner.class
+stepDefinitions/OfferPageStepDefinition.class
