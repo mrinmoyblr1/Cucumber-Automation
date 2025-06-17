@@ -2,8 +2,11 @@ package stepDefinitions;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
+import io.cucumber.java.jv.Lan;
 import org.openqa.selenium.By;
 import org.testng.Assert;
+import pageObjects.LandingPage;
+import pageObjects.OffersPage;
 import utils.TestContextSetup;
 
 import java.util.Iterator;
@@ -22,8 +25,11 @@ public class OfferPageStepDefinition {
     public void user_searched_for_same_shortname_in_the_offer_page_to_check_if_product_is_exist(String shortName) throws Throwable {
 
         switchToOffersPage();
-        testContextSetup.driver.findElement(By.xpath("//input[@id='search-field']")).sendKeys(shortName);
-        offerPageProductName = testContextSetup.driver.findElement(By.cssSelector("tr td:nth-child(1)")).getText();  // this css is very important
+
+        OffersPage offersPage = new OffersPage(testContextSetup.driver);
+        offersPage.searchItem(shortName);
+
+        offerPageProductName = offersPage.getProductName();
         System.out.println("The Product Name is extracted from Offer Page: " + offerPageProductName);
         Thread.sleep(5000);
     }
@@ -31,9 +37,11 @@ public class OfferPageStepDefinition {
 
     public void switchToOffersPage() throws Throwable {
 
+        LandingPage landingPage = new LandingPage(testContextSetup.driver);
+        landingPage.selectTopDealsPage();
+
         // If  already switched to Offer Page -> Skip below Part
         //if(testContextSetup.driver.getCurrentUrl().equalsIgnoreCase("https://rahulshettyacademy.com/seleniumPractise/#/offers"))
-        testContextSetup.driver.findElement(By.linkText("Top Deals")).click();
         Set<String> s1 = testContextSetup.driver.getWindowHandles();
         Iterator<String> i1 = s1.iterator();
         String parentWindow = i1.next();

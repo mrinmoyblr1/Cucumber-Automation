@@ -1,8 +1,10 @@
 package stepDefinitions;
+
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import pageObjects.LandingPage;
 import utils.TestContextSetup;
 
 public class LandingPageStepDefinition {
@@ -27,9 +29,11 @@ public class LandingPageStepDefinition {
     @When("User searched with shortname {string} and extracted the actual name of the Product")
     public void userSearchedWithShortnameAndExtractedTheActualNameOfTheProduct(String shortName) throws Throwable {
 
-        testContextSetup.driver.findElement(By.xpath("//input[@type='search']")).sendKeys(shortName);
+        LandingPage landingPage = new LandingPage(testContextSetup.driver);
+        landingPage.searchItem(shortName);
+
         Thread.sleep(5000);
-        testContextSetup.landingPageProductName = testContextSetup.driver.findElement(By.cssSelector("h4[class='product-name']")).getText().split("-")[0].trim();
+        testContextSetup.landingPageProductName = landingPage.getProductName().split("-")[0].trim();
         System.out.println("The Product Name is extracted from Home Page: " + testContextSetup.landingPageProductName);
 
     }
