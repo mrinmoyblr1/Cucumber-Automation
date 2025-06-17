@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="0.089" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-06-17T00:39:45.968757Z">
-<testcase classname="Application Login" name="User Page default login" time="0.004">
+<testsuite name="Cucumber" time="0.09" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-06-17T00:56:10.273418Z">
+<testcase classname="Application Login" name="User Page default login" time="0.005">
 <system-out><![CDATA[
 When launch the browser from config variables...............................passed
 And hit the home page url of banking site...................................passed
@@ -10,7 +10,7 @@ Then Home Page is displayed.................................................pass
 And Cards are displayed.....................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Application Login" name="Mortgage User Page default login - #1.1" time="0.001">
+<testcase classname="Application Login" name="Mortgage User Page default login - #1.1" time="0.002">
 <system-out><![CDATA[
 When launch the browser from config variables...............................passed
 And hit the home page url of banking site...................................passed

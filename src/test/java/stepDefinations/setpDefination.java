@@ -3,6 +3,8 @@ package stepDefinations;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
 
 import java.util.List;
 
@@ -35,12 +37,16 @@ public class setpDefination {
     @Given("User is on NetBanking landing page")
     public void user_is_on_net_banking_landing_page() {
         System.out.println("This is under :: User is on NetBanking landing page :: ");
+        //Assert.assertTrue(false);
+        //Assert.fail();
+        //Assert.assertTrue(false);
     }
 
 
     @Given("User is on Practice landing page")
     public void user_is_on_practice_landing_page() {
         System.out.println("This is under :: User is on Practice landing page :: ");
+
     }
 
 
