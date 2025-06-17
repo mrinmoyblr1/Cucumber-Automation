@@ -1,33 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="0.09" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-06-17T00:56:10.273418Z">
-<testcase classname="Application Login" name="User Page default login" time="0.005">
+<testsuite name="Cucumber" time="0.064" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-06-17T13:20:18.448545Z">
+<testcase classname="Search and Place the Order for Products" name="Search Experience for the Product search in both home abd Offers Page" time="0.002">
 <system-out><![CDATA[
-When launch the browser from config variables...............................passed
-And hit the home page url of banking site...................................passed
-Given User is on NetBanking landing page....................................passed
-When User login into application with "Jin" and Password 1234...............passed
-Then Home Page is displayed.................................................passed
-And Cards are displayed.....................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Application Login" name="Mortgage User Page default login - #1.1" time="0.002">
-<system-out><![CDATA[
-When launch the browser from config variables...............................passed
-And hit the home page url of banking site...................................passed
-Given User is on NetBanking landing page....................................passed
-When User login into application with "debituser" and Password "hello12"....passed
-Then Home Page is displayed.................................................passed
-And Cards are displayed.....................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Application Login" name="Mortgage User Page default login - #1.2" time="0.001">
-<system-out><![CDATA[
-When launch the browser from config variables...............................passed
-And hit the home page url of banking site...................................passed
-Given User is on NetBanking landing page....................................passed
-When User login into application with "crediuser" and Password "lpo213".....passed
-Then Home Page is displayed.................................................passed
-And Cards are displayed.....................................................passed
+Given User is on GreenCart landing Page.....................................passed
+When User searched with shortname "Tom" and extracted the actual name of the Product.passed
+Then User searched for "Tom" shortname in the offer page to check if product is exist with same name.passed
 ]]></system-out>
 </testcase>
 </testsuite>

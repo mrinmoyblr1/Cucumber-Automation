@@ -12,6 +12,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.util.Iterator;
 import java.util.Set;
+import java.util.concurrent.TimeUnit;
 
 public class GreenKartStepDefination {
     public WebDriver driver;
@@ -27,8 +28,9 @@ public class GreenKartStepDefination {
     }
 
     @When("User searched with shortname {} and extracted the actual name of the Product")
-    public void userSearchedWithShortnameAndExtractedTheActualNameOfTheProduct(String shortName) {
+    public void userSearchedWithShortnameAndExtractedTheActualNameOfTheProduct(String shortName) throws Throwable {
         driver.findElement(By.xpath("//input[@type='search']")).sendKeys("Tom");
+        Thread.sleep(5000);
         String productName = driver.findElement(By.cssSelector("h4[class='product-name']")).getText().split("-")[0].trim();
         System.out.println("The Product Name is extracted from Home Page: " + productName);
     }
@@ -41,10 +43,11 @@ public class GreenKartStepDefination {
         String parentWindow = i1.next();
         String childWindow = i1.next();
         driver.switchTo().window(childWindow);
-        System.out.println("===================================");
         System.out.println(driver.getCurrentUrl());
         System.out.println(driver.getTitle());
-        System.out.println("===================================");
+        //driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        //driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        Thread.sleep(5000);
 
 
         driver.findElement(By.xpath("//input[@id='search-field']")).sendKeys("Tom");
