@@ -30,10 +30,10 @@ public class LandingPageStepDefinition {
 
         LandingPage landingPage=testContextSetup.pageObjectManager.getLandingPage();
 
-
         landingPage.searchItem(shortName);
         Thread.sleep(5000);
         testContextSetup.landingPageProductName = landingPage.getProductName().split("-")[0].trim();
         System.out.println("The Product Name is extracted from Home Page: " + testContextSetup.landingPageProductName);
+        System.out.println("========Check========");
     }
 }
