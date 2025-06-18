@@ -22,14 +22,15 @@ public class OfferPageStepDefinition {
 
         switchToOffersPage();
 
-        System.out.println("Check point inside ====1111====");
-        OffersPage offersPage = new OffersPage(testContextSetup.driver);
-        System.out.println("Check point inside ====2222====");
 
+        OffersPage offersPage = testContextSetup.pageObjectManager.OffersPage();
+
+
+        System.out.println("Check point inside ====1111====");
         offersPage.searchItem(shortName);
-        System.out.println("Check point inside ====3333====");
+        System.out.println("Check point inside ====2222====");
         offerPageProductName = offersPage.getProductName();
-        System.out.println("Check point inside ====4444====");
+
         System.out.println("The Product Name is extracted from Offer Page: " + offerPageProductName);
         Thread.sleep(5000);
     }

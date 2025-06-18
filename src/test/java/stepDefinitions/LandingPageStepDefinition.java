@@ -1,34 +1,40 @@
 package stepDefinitions;
+
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import pageObjects.LandingPage;
 import utils.TestContextSetup;
+
 public class LandingPageStepDefinition {
     //public WebDriver driver;
     TestContextSetup testContextSetup;
+
     public LandingPageStepDefinition(TestContextSetup testContextSetup) {
         this.testContextSetup = testContextSetup;
     }
+
     @Given("^User is on GreenCart landing Page$")
     public void user_is_on_greencart_landing_page() throws Throwable {
+        System.out.println("Browser opened successfully");
 
 
-        System.setProperty("webdriver.chome.driver", "/Users/mrinmoy/Documents/Development/Selenium/chromedriver");
-        testContextSetup.driver = new FirefoxDriver();
-        //driver = new ChromeDriver();
-        testContextSetup.driver.manage().window().maximize();
-        testContextSetup.driver.get("https://rahulshettyacademy.com/seleniumPractise/#/");
+//        System.setProperty("webdriver.chome.driver", "/Users/mrinmoy/Documents/Development/Selenium/chromedriver");
+//        testContextSetup.driver = new FirefoxDriver();
+//        //driver = new ChromeDriver();
+//        testContextSetup.driver.manage().window().maximize();
+//        testContextSetup.driver.get("https://rahulshettyacademy.com/seleniumPractise/#/");
 
 
     }
+
     @When("User searched with shortname {string} and extracted the actual name of the Product")
     public void userSearchedWithShortnameAndExtractedTheActualNameOfTheProduct(String shortName) throws Throwable {
 
 
-      // LandingPage landingPage = new LandingPage(testContextSetup.driver);
+        // LandingPage landingPage = new LandingPage(testContextSetup.driver);
 
-        LandingPage landingPage=testContextSetup.pageObjectManager.getLandingPage();
+        LandingPage landingPage = testContextSetup.pageObjectManager.getLandingPage();
 
         landingPage.searchItem(shortName);
         Thread.sleep(5000);
