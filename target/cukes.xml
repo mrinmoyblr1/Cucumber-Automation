@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="33.526" tests="1" skipped="0" failures="1" errors="0" timestamp="2025-06-18T15:30:26.748295Z">
-<testcase classname="Search and Place the Order for Products" name="Search Experience for the Product search in both home abd Offers Page" time="33.452">
+<testsuite name="Cucumber" time="34.117" tests="1" skipped="0" failures="1" errors="0" timestamp="2025-06-18T17:06:01.679753Z">
+<testcase classname="Search and Place the Order for Products" name="Search Experience for the Product search in both home abd Offers Page" time="34.025">
 <failure type="org.openqa.selenium.NoSuchElementException" message="Unable to locate element: //input[@id='search-field']
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.33.0', revision: '2c6aaad03a'
 System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.5', java.version: '20.0.2'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [8db38bd0-fa23-4d7e-b465-a27fc0265fd0, findElement {using=xpath, value=//input[@id='search-field']}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.2, moz:accessibilityChecks: false, moz:buildID: 20230710165010, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 24.5.0, moz:processID: 2214, moz:profile: /var/folders/cp/6fj6gfq920z..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 8db38bd0-fa23-4d7e-b465-a27fc0265fd0">
+Command: [1570da04-aabe-4cb6-b517-90108bf39ec1, findElement {value=//input[@id='search-field'], using=xpath}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.2, moz:accessibilityChecks: false, moz:buildID: 20230710165010, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 24.5.0, moz:processID: 3970, moz:profile: /var/folders/cp/6fj6gfq920z..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1570da04-aabe-4cb6-b517-90108bf39ec1">
 <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //input[@id='search-field']
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.33.0', revision: '2c6aaad03a'
 System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.5', java.version: '20.0.2'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [8db38bd0-fa23-4d7e-b465-a27fc0265fd0, findElement {using=xpath, value=//input[@id='search-field']}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.2, moz:accessibilityChecks: false, moz:buildID: 20230710165010, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 24.5.0, moz:processID: 2214, moz:profile: /var/folders/cp/6fj6gfq920z..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 8db38bd0-fa23-4d7e-b465-a27fc0265fd0
+Command: [1570da04-aabe-4cb6-b517-90108bf39ec1, findElement {value=//input[@id='search-field'], using=xpath}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.2, moz:accessibilityChecks: false, moz:buildID: 20230710165010, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 24.5.0, moz:processID: 3970, moz:profile: /var/folders/cp/6fj6gfq920z..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1570da04-aabe-4cb6-b517-90108bf39ec1
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
@@ -40,7 +40,6 @@ Session ID: 8db38bd0-fa23-4d7e-b465-a27fc0265fd0
 Given User is on GreenCart landing Page.....................................passed
 When User searched with shortname "Tom" and extracted the actual name of the Product.passed
 Then User searched for "Tom" shortname in the offer page....................failed
-And validate product name in offers page matches with Landing Page..........skipped
 ]]></system-out>
 </testcase>
 </testsuite>
