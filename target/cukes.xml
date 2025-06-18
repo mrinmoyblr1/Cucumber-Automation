@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="37.866" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-06-18T19:30:41.129685Z">
-<testcase classname="Search and Place the Order for Products" name="Search Experience for the Product search in both home abd Offers Page" time="37.785">
+<testsuite name="Cucumber" time="32.081" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-06-18T19:34:07.969329Z">
+<testcase classname="Search and Place the Order for Products" name="Search Experience for the Product search in both home abd Offers Page" time="31.998">
 <system-out><![CDATA[
 Given User is on GreenCart landing Page.....................................passed
 When User searched with shortname "Tom" and extracted the actual name of the Product.passed

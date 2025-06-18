@@ -25,10 +25,8 @@ public class OfferPageStepDefinition {
 
         OffersPage offersPage = testContextSetup.pageObjectManager.OffersPage();
 
-
-        System.out.println("Check point inside ====1111====");
         offersPage.searchItem(shortName);
-        System.out.println("Check point inside ====2222====");
+
         offerPageProductName = offersPage.getProductName();
 
         System.out.println("The Product Name is extracted from Offer Page: " + offerPageProductName);
@@ -37,10 +35,6 @@ public class OfferPageStepDefinition {
 
 
     public void switchToOffersPage() throws Throwable {
-
-
-        // If  already switched to Offer Page -> Skip below Part
-        //if(testContextSetup.driver.getCurrentUrl().equalsIgnoreCase("https://rahulshettyacademy.com/seleniumPractise/#/offers"))
 
         LandingPage landingPage = testContextSetup.pageObjectManager.getLandingPage();  // Here we are eliminating object creation
         landingPage.selectTopDealsPage();

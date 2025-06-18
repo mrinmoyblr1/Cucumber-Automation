@@ -7,7 +7,6 @@ import pageObjects.LandingPage;
 import utils.TestContextSetup;
 
 public class LandingPageStepDefinition {
-    //public WebDriver driver;
     TestContextSetup testContextSetup;
 
     public LandingPageStepDefinition(TestContextSetup testContextSetup) {
@@ -16,23 +15,12 @@ public class LandingPageStepDefinition {
 
     @Given("^User is on GreenCart landing Page$")
     public void user_is_on_greencart_landing_page() throws Throwable {
-        System.out.println("Browser opened successfully");
-
-
-//        System.setProperty("webdriver.chome.driver", "/Users/mrinmoy/Documents/Development/Selenium/chromedriver");
-//        testContextSetup.driver = new FirefoxDriver();
-//        //driver = new ChromeDriver();
-//        testContextSetup.driver.manage().window().maximize();
-//        testContextSetup.driver.get("https://rahulshettyacademy.com/seleniumPractise/#/");
-
+        System.out.println("Browser opened successfully...");
 
     }
 
     @When("User searched with shortname {string} and extracted the actual name of the Product")
     public void userSearchedWithShortnameAndExtractedTheActualNameOfTheProduct(String shortName) throws Throwable {
-
-
-        // LandingPage landingPage = new LandingPage(testContextSetup.driver);
 
         LandingPage landingPage = testContextSetup.pageObjectManager.getLandingPage();
 
@@ -40,6 +28,6 @@ public class LandingPageStepDefinition {
         Thread.sleep(5000);
         testContextSetup.landingPageProductName = landingPage.getProductName().split("-")[0].trim();
         System.out.println("The Product Name is extracted from Home Page: " + testContextSetup.landingPageProductName);
-        System.out.println("========Check========");
+
     }
 }
