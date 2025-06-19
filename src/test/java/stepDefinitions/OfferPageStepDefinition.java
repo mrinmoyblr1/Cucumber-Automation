@@ -46,7 +46,6 @@ public class OfferPageStepDefinition {
 
     @And("^validate product name in offers page matches with Landing Page$")
     public void validate_product_name_in_offers_page_matches_with_landing_page() throws Throwable {
-        System.out.println("Check point inside ========");
         Assert.assertEquals(offerPageProductName, testContextSetup.landingPageProductName);
     }
 }
