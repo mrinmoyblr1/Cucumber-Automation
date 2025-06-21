@@ -4,6 +4,7 @@ utils/TestContextSetup.class
 utils/GenericUtils.class
 cucumberOptions/TestNGTestRunner.class
 utils/TestBase.class
+stepDefinitions/Hooks.class
 pageObjects/OffersPage.class
 pageObjects/PageObjectManager.class
 stepDefinitions/OfferPageStepDefinition.class

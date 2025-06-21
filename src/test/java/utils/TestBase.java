@@ -17,10 +17,6 @@ public class TestBase {
         Properties prop = new Properties();
         prop.load(fis);
         String url = prop.getProperty("QAUrl");
-        System.out.println("=====================");
-        System.out.println(prop.getProperty("browser"));
-        System.out.println(prop.getProperty("QAUrl"));
-        System.out.println("=====================");
         if (driver == null) {
             if (prop.getProperty("browser").equalsIgnoreCase("firefox")) {
                 driver = new FirefoxDriver();

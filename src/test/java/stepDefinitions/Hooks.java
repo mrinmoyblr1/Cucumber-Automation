@@ -1,14 +1,19 @@
 package stepDefinitions;
 
-import io.cucumber.java.Before;
+import io.cucumber.java.After;
+import utils.TestContextSetup;
+
+import java.io.IOException;
 
 public class Hooks {
+    TestContextSetup testContextSetup;
 
-
-    @Before
-    public void AfterScenario() {
-
-
+    public Hooks(TestContextSetup testContextSetup) {
+        this.testContextSetup = testContextSetup;
     }
 
+    @After
+    public void AfterScenario() throws IOException {
+        testContextSetup.testBase.WebDriverManager().quit();
+    }
 }
