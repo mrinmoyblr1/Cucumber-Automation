@@ -7,7 +7,6 @@ public class PageObjectManager {
     public OffersPage offersPage;
     public WebDriver driver;
 
-
     public PageObjectManager(WebDriver driver) {
         this.driver = driver;
     }

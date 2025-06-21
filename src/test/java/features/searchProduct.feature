@@ -6,7 +6,3 @@ Feature: Search and Place the Order for Products
     When User searched with shortname "Tom" and extracted the actual name of the Product
     Then User searched for "Tom" shortname in the offer page
     And validate product name in offers page matches with Landing Page
-#    Examples:
-#      | Name  |
-#      | Tom   |
-#      | Harry |

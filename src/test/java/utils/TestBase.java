@@ -1,18 +1,36 @@
 package utils;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Properties;
 
 public class TestBase {
     public WebDriver driver;
 
-    public WebDriver WebDriverManager() {
-
+    public WebDriver WebDriverManager() throws IOException {
+        FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "//src/test/java/resources/global.properties");
+        Properties prop = new Properties();
+        prop.load(fis);
+        String url = prop.getProperty("QAUrl");
+        System.out.println("=====================");
+        System.out.println(prop.getProperty("browser"));
+        System.out.println(prop.getProperty("QAUrl"));
+        System.out.println("=====================");
         if (driver == null) {
-            System.setProperty("webdriver.chome.driver", "/Users/mrinmoy/Documents/Development/Selenium/chromedriver");
-            driver = new FirefoxDriver();
-            driver.manage().window().maximize();
-            driver.get("https://rahulshettyacademy.com/seleniumPractise/#/");
+            if (prop.getProperty("browser").equalsIgnoreCase("firefox")) {
+                driver = new FirefoxDriver();
+                driver.manage().window().maximize();
+            } else {
+                System.setProperty("webdriver.chome.driver", System.getProperty("user.dir") + "//src/test/java/resources/chromedriver");
+                driver = new ChromeDriver();
+                driver.manage().window().maximize();
+            }
+            driver.get(url);
         }
         return driver;
     }
