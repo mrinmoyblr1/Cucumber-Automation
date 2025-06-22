@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="1" name="TestSuite" time="17.663" errors="0" skipped="0">
+<testsuite tests="1" failures="0" name="TestSuite" time="29.888" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="24.0.1+9-30"/>
@@ -61,80 +61,5 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase classname="cucumberOptions.TestNGTestRunner" name="runScenario" time="17.663">
-    <failure message="Unable to locate element: a.increment
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.5&apos;, java.version: &apos;24.0.1&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [8fbeb8a5-85a7-4e77-a7f3-59560a794d67, findElement {value=a.increment, using=link text}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 124.0.2, moz:accessibilityChecks: false, moz:buildID: 20240401114208, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 24.5.0, moz:processID: 55753, moz:profile: /var/folders/t3/gt8f856s23n..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 8fbeb8a5-85a7-4e77-a7f3-59560a794d67" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Unable to locate element: a.increment
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.5&apos;, java.version: &apos;24.0.1&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [8fbeb8a5-85a7-4e77-a7f3-59560a794d67, findElement {value=a.increment, using=link text}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 124.0.2, moz:accessibilityChecks: false, moz:buildID: 20240401114208, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 24.5.0, moz:processID: 55753, moz:profile: /var/folders/t3/gt8f856s23n..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 8fbeb8a5-85a7-4e77-a7f3-59560a794d67
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
-	at pageObjects.LandingPage.incrementQuantity(LandingPage.java:46)
-	at stepDefinitions.LandingPageStepDefinition.added_items_product(LandingPageStepDefinition.java:36)
-	at ✽.Added &quot;3&quot; items of the selected product to cart(file:///Users/mrinmoy/Documents/Development/CucumberFramework/src/test/java/features/Checkout.feature:8)
-</failure>
-    <system-out>Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@19dfb72a
-
-@PlaceOrder
-Scenario Outline: Search Experience for the Product search in both home abd Offers Page &amp;#27;[90m# src/test/java/features/Checkout.feature:14&amp;#27;[0m
-Browser opened successfully...
-  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mUser is on GreenCart landing Page&amp;#27;[0m                                               &amp;#27;[90m# stepDefinitions.LandingPageStepDefinition.user_is_on_greencart_landing_page()&amp;#27;[0m
-The Product Name is extracted from Home Page: Tomato
-  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mUser searched with shortname &amp;#27;[0m&amp;#27;[32m&amp;#27;[1mTom&amp;#27;[0m&amp;#27;[32m and extracted the actual name of the Product&amp;#27;[0m    &amp;#27;[90m# stepDefinitions.LandingPageStepDefinition.userSearchedWithShortnameAndExtractedTheActualNameOfTheProduct(java.lang.String)&amp;#27;[0m
-  &amp;#27;[31mAnd &amp;#27;[0m&amp;#27;[31mAdded &amp;#27;[0m&amp;#27;[31m&amp;#27;[1m&quot;3&quot;&amp;#27;[0m&amp;#27;[31m items of the selected product to cart&amp;#27;[0m                                   &amp;#27;[90m# stepDefinitions.LandingPageStepDefinition.added_items_product(java.lang.String)&amp;#27;[0m
-      &amp;#27;[31morg.openqa.selenium.NoSuchElementException: Unable to locate element: a.increment
-      For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-      Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
-      System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.5&apos;, java.version: &apos;24.0.1&apos;
-      Driver info: org.openqa.selenium.firefox.FirefoxDriver
-      Command: [8fbeb8a5-85a7-4e77-a7f3-59560a794d67, findElement {value=a.increment, using=link text}]
-      Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 124.0.2, moz:accessibilityChecks: false, moz:buildID: 20240401114208, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 24.5.0, moz:processID: 55753, moz:profile: /var/folders/t3/gt8f856s23n..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-      Session ID: 8fbeb8a5-85a7-4e77-a7f3-59560a794d67
-      	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-      	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-      	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-      	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-      	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-      	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-      	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-      	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-      	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-      	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
-      	at pageObjects.LandingPage.incrementQuantity(LandingPage.java:46)
-      	at stepDefinitions.LandingPageStepDefinition.added_items_product(LandingPageStepDefinition.java:36)
-      	at ✽.Added &quot;3&quot; items of the selected product to cart(file:///Users/mrinmoy/Documents/Development/CucumberFramework/src/test/java/features/Checkout.feature:8)&amp;#27;[0m
-  &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mUser proceeds to Checkout and validate the &amp;#27;[0m&amp;#27;[36m&amp;#27;[1mTom&amp;#27;[0m&amp;#27;[36m items in the checkout page&amp;#27;[0m        &amp;#27;[90m# stepDefinitions.CheckoutPageStepDefinition.user_proceeds_to_checkout_and_validate_the_tom_items_in_the_checkout_page()&amp;#27;[0m
-  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mVerify user has ability to enter promo code and place the order&amp;#27;[0m                   &amp;#27;[90m# stepDefinitions.CheckoutPageStepDefinition.verify_user_has_ability_to_enter_promo_code_and_place_the_order()&amp;#27;[0m
-</system-out>
-    <system-err>SLF4J(W): No SLF4J providers were found.
-SLF4J(W): Defaulting to no-operation (NOP) logger implementation
-SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
-</system-err>
-  </testcase>
+  <testcase classname="cucumberOptions.TestNGTestRunner" name="runScenario" time="29.888"/>
 </testsuite>

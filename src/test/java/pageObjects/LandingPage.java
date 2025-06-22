@@ -14,8 +14,8 @@ public class LandingPage {
     private By productName = By.cssSelector("h4[class='product-name']");
     private By topDeals = By.linkText("Top Deals");
 
-    private By increment = By.linkText("a.increment");
-    private By addToCart = By.linkText("product-action button");
+    private By increment = By.cssSelector("a.increment");
+    private By addToCart = By.cssSelector(".product-action button");
 
 
     public void searchItem(String name) {

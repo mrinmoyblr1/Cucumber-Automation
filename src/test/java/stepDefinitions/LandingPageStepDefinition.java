@@ -32,12 +32,11 @@ public class LandingPageStepDefinition {
 
 
     @When("Added {string} items of the selected product to cart")
-    public void added_items_product(String quantity) {
+    public void added_items_product(String quantity) throws InterruptedException {
+
+        Thread.sleep(5000);
         landingPage.incrementQuantity(Integer.parseInt(quantity));
         landingPage.addToCart();
-
-
-
+        Thread.sleep(5000);
     }
-
 }
