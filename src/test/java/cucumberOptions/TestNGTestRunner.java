@@ -8,7 +8,7 @@ import org.testng.annotations.DataProvider;
         features = "src/test/java/features"
         //, dryRun = true   // dryRun = true. This is just like compile. It will check if all the lines under features file has respected step definition or not !
         , glue = "stepDefinitions"
-        //, tags = "@RegressionTest1"
+        , tags = "@PlaceOrder"
         //, tags = "@SmokeTest or @RegressionTest"
         //, tags = "@SmokeTest and @RegressionTest"
         // , tags = "not @RegressionTest"
