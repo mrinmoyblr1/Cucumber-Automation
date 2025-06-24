@@ -18,9 +18,8 @@ public class LandingPageStepDefinition {
     @Given("^User is on GreenCart landing Page$")
     public void user_is_on_greencart_landing_page() throws Throwable {
         Assert.assertTrue(landingPage.getTitleLandingPage().contains("GreenKart"));
-        System.out.println("Browser opened successfully...");
-        System.out.println("Browser opened successfully...");
-        System.out.println("Browser opened successfully...");
+        System.out.println("Browser opened successfully.........");
+
     }
 
     @When("^User searched with shortname (.+) and extracted the actual name of the Product$")
