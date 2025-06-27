@@ -39,6 +39,7 @@ public class LandingPageStepDefinition {
         System.out.println("===============");
         landingPage.incrementQuantity(Integer.parseInt(quantity));
         landingPage.addToCart();
+        System.out.println("===============");
         Thread.sleep(5000);
     }
 }
