@@ -7,6 +7,6 @@ Feature: Search and Place the Order for Products
     Then User searched for <Name> shortname in the offer page
     And validate product name in offers page matches with Landing Page
     Examples:
-      | Name |
-      | Tom  |
-#      | Beet |
+      | Name    |
+      | Tom     |
+      | Beet111 |
