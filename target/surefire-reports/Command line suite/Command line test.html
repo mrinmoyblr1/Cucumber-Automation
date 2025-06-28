@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Command line test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Jun 28 00:03:42 EDT 2025</td>
+<td>Started on:</td><td>Sat Jun 28 07:11:50 EDT 2025</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (438 ms)</td>
+<tr><td>Total time:</td><td>29 seconds (29601 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -77,111 +77,8 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='cucumberOptions.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberOptions.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search Experience for the Product search in both home abd Offers Page", "Search and Place the Order for Products"</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because the return value of &quot;java.util.Properties.getProperty(String)&quot; is null
-	at utils.TestBase.WebDriverManager(TestBase.java:31)
-	at utils.TestContextSetup.&lt;init&gt;(TestContextSetup.java:17)
-	at org.picocontainer.injectors.AbstractInjector.newInstance(AbstractInjector.java:145)
-	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:342)
-	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
-	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
-	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)
-	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
-	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
-	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
-	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
-	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:632)
-	at org.picocontainer.parameters.BasicComponentParameter$1.resolveInstance(BasicComponentParameter.java:118)
-	at org.picocontainer.parameters.ComponentParameter$1.resolveInstance(ComponentParameter.java:136)
-	at org.picocontainer.injectors.SingleMemberInjector.getParameter(SingleMemberInjector.java:78)
-	at org.picocontainer.injectors.ConstructorInjector$CtorAndAdapters.getParameterArguments(ConstructorInjector.java:309)
-	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:335)
-	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
-	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
-	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)
-	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
-	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
-	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
-	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
-	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:678)
-	at io.cucumber.picocontainer.PicoFactory.getInstance(PicoFactory.java:64)
-	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
-	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
-	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:62)
-	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:81)
-	at io.cucumber.core.runner.TestStep.run(TestStep.java:53)
-	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
-	at io.cucumber.core.runner.TestCase.run(TestCase.java:86)
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:77)
-	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:135)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:132)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
-	at java.base/java.lang.Thread.run(Thread.java:1447)
-... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace267486855", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace267486855'><pre>java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because the return value of &quot;java.util.Properties.getProperty(String)&quot; is null
-	at utils.TestBase.WebDriverManager(TestBase.java:31)
-	at utils.TestContextSetup.&lt;init&gt;(TestContextSetup.java:17)
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-	at org.picocontainer.injectors.AbstractInjector.newInstance(AbstractInjector.java:145)
-	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:342)
-	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
-	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
-	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)
-	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
-	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
-	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
-	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
-	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:632)
-	at org.picocontainer.parameters.BasicComponentParameter$1.resolveInstance(BasicComponentParameter.java:118)
-	at org.picocontainer.parameters.ComponentParameter$1.resolveInstance(ComponentParameter.java:136)
-	at org.picocontainer.injectors.SingleMemberInjector.getParameter(SingleMemberInjector.java:78)
-	at org.picocontainer.injectors.ConstructorInjector$CtorAndAdapters.getParameterArguments(ConstructorInjector.java:309)
-	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:335)
-	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
-	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
-	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)
-	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
-	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
-	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
-	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
-	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:678)
-	at io.cucumber.picocontainer.PicoFactory.getInstance(PicoFactory.java:64)
-	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
-	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
-	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:62)
-	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:81)
-	at io.cucumber.core.runner.TestStep.run(TestStep.java:53)
-	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
-	at io.cucumber.core.runner.TestCase.run(TestCase.java:86)
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:77)
-	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:135)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:132)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
-	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
-	at java.base/java.lang.Thread.run(Thread.java:1447)
-</pre></div></td>
-<td>0</td>
+<td></td>
+<td>29</td>
 <td>cucumberOptions.TestNGTestRunner@23282c25</td></tr>
 </table><p>
 </body>

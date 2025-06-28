@@ -26,9 +26,8 @@ public class TestBase {
         // Here if the testConditions is true then it will return value1 or else it will return value2
         String browser = browser_maven != null ? browser_maven : browser_properties;
 
-
         if (driver == null) {
-            if (prop.getProperty(browser).equalsIgnoreCase("firefox")) {
+            if (browser.equalsIgnoreCase("firefox")) {
                 driver = new FirefoxDriver();
                 driver.manage().window().maximize();
             } else {

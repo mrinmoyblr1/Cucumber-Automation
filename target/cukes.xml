@@ -1,71 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="0.17" tests="1" skipped="0" failures="1" errors="0" timestamp="2025-06-28T04:03:42.300028Z">
-<testcase classname="Search and Place the Order for Products" name="Search Experience for the Product search in both home abd Offers Page - #1.1" time="0.061">
-<failure type="java.lang.NullPointerException" message="Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because the return value of &quot;java.util.Properties.getProperty(String)&quot; is null">
-<![CDATA[java.lang.NullPointerException: Cannot invoke "String.equalsIgnoreCase(String)" because the return value of "java.util.Properties.getProperty(String)" is null
-	at utils.TestBase.WebDriverManager(TestBase.java:31)
-	at utils.TestContextSetup.<init>(TestContextSetup.java:17)
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-	at org.picocontainer.injectors.AbstractInjector.newInstance(AbstractInjector.java:145)
-	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:342)
-	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
-	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
-	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)
-	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
-	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
-	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
-	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
-	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:632)
-	at org.picocontainer.parameters.BasicComponentParameter$1.resolveInstance(BasicComponentParameter.java:118)
-	at org.picocontainer.parameters.ComponentParameter$1.resolveInstance(ComponentParameter.java:136)
-	at org.picocontainer.injectors.SingleMemberInjector.getParameter(SingleMemberInjector.java:78)
-	at org.picocontainer.injectors.ConstructorInjector$CtorAndAdapters.getParameterArguments(ConstructorInjector.java:309)
-	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:335)
-	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
-	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
-	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)
-	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
-	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
-	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
-	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
-	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:678)
-	at io.cucumber.picocontainer.PicoFactory.getInstance(PicoFactory.java:64)
-	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
-	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
-	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:62)
-	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:81)
-	at io.cucumber.core.runner.TestStep.run(TestStep.java:53)
-	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
-	at io.cucumber.core.runner.TestCase.run(TestCase.java:86)
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:77)
-	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:135)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:132)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
-	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
-	at java.base/java.lang.Thread.run(Thread.java:1447)
-]]>
-</failure>
+<testsuite name="Cucumber" time="29.339" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-06-28T11:11:50.990477Z">
+<testcase classname="Search and Place the Order for Products" name="Search Experience for the Product search in both home abd Offers Page - #1.1" time="29.249">
 <system-out><![CDATA[
-Given User is on GreenCart landing Page.....................................failed
-When User searched with shortname Tom and extracted the actual name of the Product.skipped
-And Added "3" items of the selected product to cart.........................skipped
-Then User proceeds to Checkout and validate the Tom items in the checkout page.skipped
-And Verify user has ability to enter promo code and place the order.........skipped
+Given User is on GreenCart landing Page.....................................passed
+When User searched with shortname Tom and extracted the actual name of the Product.passed
+And Added "3" items of the selected product to cart.........................passed
+Then User proceeds to Checkout and validate the Tom items in the checkout page.passed
+And Verify user has ability to enter promo code and place the order.........passed
 ]]></system-out>
 </testcase>
 </testsuite>

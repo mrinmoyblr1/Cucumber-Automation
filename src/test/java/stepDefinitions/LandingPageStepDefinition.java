@@ -36,10 +36,8 @@ public class LandingPageStepDefinition {
     public void added_items_product(String quantity) throws InterruptedException {
 
         Thread.sleep(5000);
-        System.out.println("===============");
         landingPage.incrementQuantity(Integer.parseInt(quantity));
         landingPage.addToCart();
-        System.out.println("===============");
         Thread.sleep(5000);
     }
 }
