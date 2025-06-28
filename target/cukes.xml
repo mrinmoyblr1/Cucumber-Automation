@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="29.339" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-06-28T11:11:50.990477Z">
-<testcase classname="Search and Place the Order for Products" name="Search Experience for the Product search in both home abd Offers Page - #1.1" time="29.249">
+<testsuite name="Cucumber" time="78.778" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-06-28T17:42:21.037568Z">
+<testcase classname="Search and Place the Order for Products" name="Search Experience for the Product search in both home abd Offers Page - #1.1" time="78.689">
+<system-out><![CDATA[
+Given User is on GreenCart landing Page.....................................passed
+When User searched with shortname Tom and extracted the actual name of the Product.passed
+Then User searched for Tom shortname in the offer page......................passed
+And validate product name in offers page matches with Landing Page..........passed
+]]></system-out>
+</testcase>
+<testcase classname="Search and Place the Order for Products" name="Search Experience for the Product search in both home abd Offers Page - #1.1" time="72.077">
 <system-out><![CDATA[
 Given User is on GreenCart landing Page.....................................passed
 When User searched with shortname Tom and extracted the actual name of the Product.passed
