@@ -3,10 +3,8 @@ package utils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.annotations.DataProvider;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
@@ -18,9 +16,19 @@ public class TestBase {
         FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "//src/test/java/resources/global.properties");
         Properties prop = new Properties();
         prop.load(fis);
+
         String url = prop.getProperty("QAUrl");
+        String browser_properties = prop.getProperty("browser");
+        String browser_maven = System.getProperty("browser");
+
+
+        // result = testConditions ? value1 : value2
+        // Here if the testConditions is true then it will return value1 or else it will return value2
+        String browser = browser_maven != null ? browser_maven : browser_properties;
+
+
         if (driver == null) {
-            if (prop.getProperty("browser").equalsIgnoreCase("firefox")) {
+            if (prop.getProperty(browser).equalsIgnoreCase("firefox")) {
                 driver = new FirefoxDriver();
                 driver.manage().window().maximize();
             } else {

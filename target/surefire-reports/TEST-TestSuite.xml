@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="TestSuite" time="29.475" errors="0" skipped="0">
+<testsuite tests="1" failures="1" name="TestSuite" time="0.117" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="24.0.1+9-30"/>
@@ -9,6 +9,7 @@
     <property name="java.vendor.url" value="https://java.oracle.com/"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
     <property name="path.separator" value=":"/>
+    <property name="cucumber.features" value="/Users/mrinmoy/Documents/Development/CucumberFramework/src/test/java/features/Checkout.feature"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
@@ -39,12 +40,11 @@
     <property name="user.timezone" value="America/New_York"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="java.specification.version" value="24"/>
-    <property name="cucumber.filter.tags" value="@PlaceOrder"/>
     <property name="user.name" value="mrinmoy"/>
     <property name="java.class.path" value="/Users/mrinmoy/apache-maven-3.8.4/boot/plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="24"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test -Dcucumber.filter.tags=@PlaceOrder"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test -Dcucumber.features=/Users/mrinmoy/Documents/Development/CucumberFramework/src/test/java/features/Checkout.feature"/>
     <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-24.jdk/Contents/Home"/>
     <property name="apple.awt.application.name" value="Launcher"/>
     <property name="user.language" value="en"/>
@@ -62,5 +62,244 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase classname="cucumberOptions.TestNGTestRunner" name="runScenario" time="29.475"/>
+  <testcase classname="cucumberOptions.TestNGTestRunner" name="runScenario" time="0.117">
+    <failure message="Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because the return value of &quot;java.util.Properties.getProperty(String)&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because the return value of &quot;java.util.Properties.getProperty(String)&quot; is null
+	at utils.TestBase.WebDriverManager(TestBase.java:31)
+	at utils.TestContextSetup.&lt;init&gt;(TestContextSetup.java:17)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.picocontainer.injectors.AbstractInjector.newInstance(AbstractInjector.java:145)
+	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:342)
+	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
+	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
+	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)
+	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
+	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
+	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:632)
+	at org.picocontainer.parameters.BasicComponentParameter$1.resolveInstance(BasicComponentParameter.java:118)
+	at org.picocontainer.parameters.ComponentParameter$1.resolveInstance(ComponentParameter.java:136)
+	at org.picocontainer.injectors.SingleMemberInjector.getParameter(SingleMemberInjector.java:78)
+	at org.picocontainer.injectors.ConstructorInjector$CtorAndAdapters.getParameterArguments(ConstructorInjector.java:309)
+	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:335)
+	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
+	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
+	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)
+	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
+	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
+	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:678)
+	at io.cucumber.picocontainer.PicoFactory.getInstance(PicoFactory.java:64)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:62)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:81)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:53)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:86)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:77)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:135)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:132)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+</failure>
+    <system-out>Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@6b143ee9
+
+@PlaceOrder
+Scenario Outline: Search Experience for the Product search in both home abd Offers Page &amp;#27;[90m# src/test/java/features/Checkout.feature:14&amp;#27;[0m
+  &amp;#27;[31mGiven &amp;#27;[0m&amp;#27;[31mUser is on GreenCart landing Page&amp;#27;[0m                                               &amp;#27;[90m# stepDefinitions.LandingPageStepDefinition.user_is_on_greencart_landing_page()&amp;#27;[0m
+      &amp;#27;[31mjava.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because the return value of &quot;java.util.Properties.getProperty(String)&quot; is null
+      	at utils.TestBase.WebDriverManager(TestBase.java:31)
+      	at utils.TestContextSetup.&lt;init&gt;(TestContextSetup.java:17)
+      	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+      	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+      	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+      	at org.picocontainer.injectors.AbstractInjector.newInstance(AbstractInjector.java:145)
+      	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:342)
+      	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
+      	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
+      	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)
+      	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
+      	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
+      	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
+      	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
+      	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:632)
+      	at org.picocontainer.parameters.BasicComponentParameter$1.resolveInstance(BasicComponentParameter.java:118)
+      	at org.picocontainer.parameters.ComponentParameter$1.resolveInstance(ComponentParameter.java:136)
+      	at org.picocontainer.injectors.SingleMemberInjector.getParameter(SingleMemberInjector.java:78)
+      	at org.picocontainer.injectors.ConstructorInjector$CtorAndAdapters.getParameterArguments(ConstructorInjector.java:309)
+      	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:335)
+      	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
+      	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
+      	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)
+      	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
+      	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
+      	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
+      	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
+      	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:678)
+      	at io.cucumber.picocontainer.PicoFactory.getInstance(PicoFactory.java:64)
+      	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+      	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+      	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+      	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:62)
+      	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+      	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:81)
+      	at io.cucumber.core.runner.TestStep.run(TestStep.java:53)
+      	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+      	at io.cucumber.core.runner.TestCase.run(TestCase.java:86)
+      	at io.cucumber.core.runner.Runner.runPickle(Runner.java:77)
+      	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:135)
+      	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+      	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+      	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+      	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:132)
+      	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+      	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+      	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+      	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+      	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+      	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+      	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+      	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+      	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+      	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+      	at java.base/java.lang.Thread.run(Thread.java:1447)&amp;#27;[0m
+      &amp;#27;[31mjava.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because the return value of &quot;java.util.Properties.getProperty(String)&quot; is null
+      	at utils.TestBase.WebDriverManager(TestBase.java:31)
+      	at utils.TestContextSetup.&lt;init&gt;(TestContextSetup.java:17)
+      	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+      	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+      	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+      	at org.picocontainer.injectors.AbstractInjector.newInstance(AbstractInjector.java:145)
+      	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:342)
+      	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
+      	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
+      	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)
+      	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
+      	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
+      	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
+      	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
+      	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:632)
+      	at org.picocontainer.parameters.BasicComponentParameter$1.resolveInstance(BasicComponentParameter.java:118)
+      	at org.picocontainer.parameters.ComponentParameter$1.resolveInstance(ComponentParameter.java:136)
+      	at org.picocontainer.injectors.SingleMemberInjector.getParameter(SingleMemberInjector.java:78)
+      	at org.picocontainer.injectors.ConstructorInjector$CtorAndAdapters.getParameterArguments(ConstructorInjector.java:309)
+      	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:335)
+      	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
+      	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
+      	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)
+      	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
+      	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
+      	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
+      	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
+      	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:678)
+      	at io.cucumber.picocontainer.PicoFactory.getInstance(PicoFactory.java:64)
+      	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+      	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:68)
+      	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:47)
+      	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
+      	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+      	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:81)
+      	at io.cucumber.core.runner.TestStep.run(TestStep.java:53)
+      	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:56)
+      	at io.cucumber.core.runner.TestCase.run(TestCase.java:86)
+      	at io.cucumber.core.runner.Runner.runPickle(Runner.java:77)
+      	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:135)
+      	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+      	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+      	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+      	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:132)
+      	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+      	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+      	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+      	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+      	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+      	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+      	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+      	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+      	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+      	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+      	at java.base/java.lang.Thread.run(Thread.java:1447)&amp;#27;[0m
+  &amp;#27;[36mWhen &amp;#27;[0m&amp;#27;[36mUser searched with shortname &amp;#27;[0m&amp;#27;[36m&amp;#27;[1mTom&amp;#27;[0m&amp;#27;[36m and extracted the actual name of the Product&amp;#27;[0m    &amp;#27;[90m# stepDefinitions.LandingPageStepDefinition.userSearchedWithShortnameAndExtractedTheActualNameOfTheProduct(java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mAdded &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;3&quot;&amp;#27;[0m&amp;#27;[36m items of the selected product to cart&amp;#27;[0m                                   &amp;#27;[90m# stepDefinitions.LandingPageStepDefinition.added_items_product(java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mUser proceeds to Checkout and validate the &amp;#27;[0m&amp;#27;[36m&amp;#27;[1mTom&amp;#27;[0m&amp;#27;[36m items in the checkout page&amp;#27;[0m        &amp;#27;[90m# stepDefinitions.CheckoutPageStepDefinition.user_proceeds_to_checkout_and_validate_the_tom_items_in_the_checkout_page(java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mVerify user has ability to enter promo code and place the order&amp;#27;[0m                   &amp;#27;[90m# stepDefinitions.CheckoutPageStepDefinition.verify_user_has_ability_to_enter_promo_code_and_place_the_order()&amp;#27;[0m
+      &amp;#27;[31mjava.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because the return value of &quot;java.util.Properties.getProperty(String)&quot; is null
+      	at utils.TestBase.WebDriverManager(TestBase.java:31)
+      	at utils.TestContextSetup.&lt;init&gt;(TestContextSetup.java:17)
+      	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+      	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+      	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+      	at org.picocontainer.injectors.AbstractInjector.newInstance(AbstractInjector.java:145)
+      	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:342)
+      	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
+      	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
+      	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)
+      	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
+      	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
+      	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
+      	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
+      	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:632)
+      	at org.picocontainer.parameters.BasicComponentParameter$1.resolveInstance(BasicComponentParameter.java:118)
+      	at org.picocontainer.parameters.ComponentParameter$1.resolveInstance(ComponentParameter.java:136)
+      	at org.picocontainer.injectors.SingleMemberInjector.getParameter(SingleMemberInjector.java:78)
+      	at org.picocontainer.injectors.ConstructorInjector$CtorAndAdapters.getParameterArguments(ConstructorInjector.java:309)
+      	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:335)
+      	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
+      	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
+      	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)
+      	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
+      	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
+      	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
+      	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
+      	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:678)
+      	at io.cucumber.picocontainer.PicoFactory.getInstance(PicoFactory.java:64)
+      	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+      	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:68)
+      	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:47)
+      	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
+      	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+      	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:81)
+      	at io.cucumber.core.runner.TestStep.run(TestStep.java:53)
+      	at io.cucumber.core.runner.TestCase.run(TestCase.java:92)
+      	at io.cucumber.core.runner.Runner.runPickle(Runner.java:77)
+      	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:135)
+      	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+      	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+      	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+      	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:132)
+      	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+      	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+      	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+      	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+      	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+      	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+      	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+      	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+      	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+      	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+      	at java.base/java.lang.Thread.run(Thread.java:1447)&amp;#27;[0m
+</system-out>
+    <system-err>SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+</system-err>
+  </testcase>
 </testsuite>
