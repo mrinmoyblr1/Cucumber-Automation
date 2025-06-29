@@ -38,6 +38,7 @@ public class LandingPageStepDefinition {
         Thread.sleep(5000);
         landingPage.incrementQuantity(Integer.parseInt(quantity));
         landingPage.addToCart();
+        System.out.println("==========");
         Thread.sleep(5000);
     }
 }
